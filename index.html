@@ -447,17 +447,17 @@
         <div class="box">
             <div class="contactMe form">
                 <h3>Write a Message</h3>
-                <form>
+                <form action="https://formsubmit.co/weerakkodychanuka802@gmail.com" method="post">
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox">
                                 <span>First Name</span>
-                                <input type="text" placeholder="Chanuka">
+                                <input type="text" name="name" required placeholder="Chanuka">
                             </div>
 
                             <div class="inputBox">
                                 <span>Last Name</span>
-                                <input type="text" placeholder="Weerakkody">
+                                <input type="text" name="lName" required placeholder="Weerakkody">
                             </div>
 
                         </div>
@@ -465,12 +465,12 @@
                         <div class="row50">
                             <div class="inputBox">
                                 <span>Email</span>
-                                <input type="text" placeholder="chanuka@gmail.com">
+                                <input type="text" name="email" required placeholder="chanuka@gmail.com">
                             </div>
 
                             <div class="inputBox">
                                 <span>Mobile</span>
-                                <input type="text" placeholder="+94 76 947 5434">
+                                <input type="text" name="phone" required placeholder="+94 76 947 5434">
                             </div>
 
                         </div>
@@ -478,12 +478,13 @@
                         <div class="row100">
                             <div class="inputBox">
                                 <span>Message</span>
-                                <textarea placeholder="Write your message here.."></textarea>
+                                <textarea name="msg" required placeholder="Write your message here.."></textarea>
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputBox">
+                                <input type="hidden" name="_captcha" value="false">
                                 <input type="submit" value="Send">
                             </div>
                         </div>
@@ -527,7 +528,7 @@
     </section>
 
     <!--    Footer section design-->
-    <footer class="footer" data-aos="fade-up" data-aos-duration="1500">
+    <footer class="footer">
         <div class="social">
             <a href="https://www.facebook.com/chanuka.werakkody"><i class='bx bxl-facebook' ></i></a>
             <a href="https://www.linkedin.com/in/chanuka-weerakkody-62589b264/"><i class='bx bxl-linkedin-square' ></i></a>
@@ -556,7 +557,7 @@
         </p>
     </footer>
 
-    <script src="assests/jQury/jquery-3.6.4.min.js"></script>
+    <script src="assests/jQuery/jquery-3.6.1.min.js"></script>
     <script src="assests/js/myScript.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
